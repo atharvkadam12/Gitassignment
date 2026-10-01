@@ -1,0 +1,266 @@
+DEVOPS ASSIGNMENT 1
+Exploring Git Commands for Local Repository, Remote Repository and Log Operations
+
+=========================================================
+1. LOCAL REPOSITORY COMMANDS
+=========================================================
+
+1. git init
+Description:
+Initializes a new Git repository in the current directory.
+
+Syntax:
+git init
+
+Example:
+git init
+
+---------------------------------------------------------
+
+2. git add
+Description:
+Adds files from the working directory to the staging area.
+
+Syntax:
+git add <filename>
+git add .
+
+Examples:
+git add filesmain.txt
+git add .
+
+---------------------------------------------------------
+
+3. git commit
+Description:
+Saves staged changes to the local repository.
+
+Syntax:
+git commit -m "message"
+
+Example:
+git commit -m "Added Git commands document"
+
+---------------------------------------------------------
+
+4. git status
+Description:
+Displays the status of files in the repository.
+
+Syntax:
+git status
+
+Example:
+git status
+
+---------------------------------------------------------
+
+5. git log
+Description:
+Displays commit history.
+
+Syntax:
+git log
+git log --oneline
+
+Examples:
+git log
+git log --oneline
+
+---------------------------------------------------------
+
+6. git show
+Description:
+Shows details of a specific commit.
+
+Syntax:
+git show
+git show <commit-id>
+
+Examples:
+git show
+git show a1b2c3d
+
+---------------------------------------------------------
+
+7. git branch
+Description:
+Creates, lists, or deletes branches.
+
+Syntax:
+git branch
+git branch <branch-name>
+
+Examples:
+git branch
+git branch feature
+
+---------------------------------------------------------
+
+8. git checkout
+Description:
+Switches between branches.
+
+Syntax:
+git checkout <branch-name>
+git checkout -b <branch-name>
+
+Examples:
+git checkout feature
+git checkout -b newbranch
+
+---------------------------------------------------------
+
+9. git merge
+Description:
+Merges one branch into another.
+
+Syntax:
+git merge <branch-name>
+
+Example:
+git merge feature
+
+---------------------------------------------------------
+
+10. git reset
+Description:
+Resets commits or unstages files.
+
+Syntax:
+git reset <file>
+git reset --hard HEAD~1
+
+Examples:
+git reset filesmain.txt
+git reset --hard HEAD~1
+
+---------------------------------------------------------
+
+11. git revert
+Description:
+Creates a new commit that undoes a previous commit.
+
+Syntax:
+git revert <commit-id>
+
+Example:
+git revert a1b2c3d
+
+---------------------------------------------------------
+
+12. git rebase
+Description:
+Reapplies commits on top of another branch.
+
+Syntax:
+git rebase <branch-name>
+
+Example:
+git rebase main
+
+=========================================================
+2. REMOTE REPOSITORY COMMANDS
+=========================================================
+
+13. git remote
+Description:
+Displays or manages remote repositories.
+
+Syntax:
+git remote -v
+
+Example:
+git remote -v
+
+---------------------------------------------------------
+
+14. git clone
+Description:
+Creates a copy of a remote repository.
+
+Syntax:
+git clone <repository-url>
+
+Example:
+git clone https://github.com/username/repository.git
+
+---------------------------------------------------------
+
+15. git push
+Description:
+Uploads local commits to the remote repository.
+
+Syntax:
+git push origin main
+
+Example:
+git push origin main
+
+---------------------------------------------------------
+
+16. git pull
+Description:
+Downloads and merges changes from the remote repository.
+
+Syntax:
+git pull origin main
+
+Example:
+git pull origin main
+
+---------------------------------------------------------
+
+17. git fetch
+Description:
+Downloads changes without merging.
+
+Syntax:
+git fetch origin
+
+Example:
+git fetch origin
+
+=========================================================
+3. LOG OPERATIONS
+=========================================================
+
+18. git log --oneline
+Description:
+Displays commit history in one line.
+
+Example:
+git log --oneline
+
+---------------------------------------------------------
+
+19. git log --graph
+Description:
+Shows commit history as a graph.
+
+Example:
+git log --graph --oneline
+
+---------------------------------------------------------
+
+20. git diff
+Description:
+Shows differences between files or commits.
+
+Examples:
+git diff
+git diff HEAD~1 HEAD
+
+=========================================================
+COMMON GIT WORKFLOW
+=========================================================
+
+git init
+git add .
+git commit -m "First Commit"
+git remote add origin <repository-url>
+git push -u origin main
+
+=========================================================
+END OF ASSIGNMENT
+=========================================================
